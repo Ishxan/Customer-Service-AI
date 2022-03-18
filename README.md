@@ -31,9 +31,8 @@ For LDA we sampled only 200 of the negative reviews that we obtained from step 1
 
 We also printed top 10 documents in each topic. Using those two tables we were able to determine which is every single topic about and were able to give names to different topics and create sample answers for them.
 ```
-topic\_name[1] =&#39;pedal\_issues&#39;
-
-topic\_answer[1] =&quot;Please read carefully the manual before using the product, use a different pedal or contact us for a refund or a techical assistance.&quot;
+topic_name[1] = 'pedal_issues'
+topic_answer[1] = "Please read carefully the manual before using the product, use a different pedal or contact us for a refund or a techical assistance."
 ```
 ```
 topic\_name[2] =&#39;noice\_issue&#39;
