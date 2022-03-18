@@ -17,36 +17,39 @@ Step 1 – Sentiment Analysis
 
 Before we talk about sentiment analysis a few words about data preparation. After loading data, we removed numbers, punctuation hyphens and symbols. Then we removed stop words stemmed the words and lowercased our tokens. Finally, we turned that into document feature matrix. We also did some analysis on the frequency of different tokens and did some research about distribution of tokens in documents. Finally, we visualized this with a word cloud (see picture below). This helps us determine the most important tokens in our dataset as well as understand the general structure of documents.
 
-![](RackMultipart20220318-4-12dxcvc_html_125c43b82886aa7d.png)
+![image](https://user-images.githubusercontent.com/43376214/158939371-f6b836f4-d7d0-44d4-9894-c36dc2c6697f.png)
 
 Let&#39;s now talk about sentiment analysis. For our model the positive and negative tokens we used are from Bing&#39;s dictionary [1]. After loading this dataset, we used it to calculate the number of positive and negative tokens in our reviews and based on that calculate net difference between them (positive - negative = net). We used -2 as the threshold for a given review being negative as this number proves to result in a better performance in the future when we create our chatbot. Finally, we plotted the share of positive and negative reviews. We can see from the picture below that there are generally more positive reviews than negative ones. We saved our negative reviews in a separate variable to use in the next step
 
-![](RackMultipart20220318-4-12dxcvc_html_44fbd6d45a165054.png)
+![image](https://user-images.githubusercontent.com/43376214/158939402-b7feefed-3f56-45d6-9572-569cc6231a07.png)
 
 Step 2 – Latent Dirichlet Analysis
 
 For LDA we sampled only 200 of the negative reviews that we obtained from step 1. This is done in order to increase speed of computations as well as to add some randomness to our LDA. For our LDA we used Gibbs method and we used number of iterations - 200. To determine the best number of topics we used the perplexity function over range 2:50. It turns out the number of topics resulting from this method is 42 which is of course too large. This might result from the fact that we choose only 200 reviews for our sample. For convenience we choose number 4 but of course in practice we would pay more attention to this number and try to find the most suitable one either using perplexity or other methods [2]. After that we calculate term to topic and document to topic probabilities. We also plotted the top 10 terms in each topic.
 
-![](RackMultipart20220318-4-12dxcvc_html_552873e32994c9db.png)
+![image](https://user-images.githubusercontent.com/43376214/158939430-9f07ffab-334b-4db8-81c0-202cca179a2e.png)
 
 We also printed top 10 documents in each topic. Using those two tables we were able to determine which is every single topic about and were able to give names to different topics and create sample answers for them.
-
+```
 topic\_name[1] =&#39;pedal\_issues&#39;
 
 topic\_answer[1] =&quot;Please read carefully the manual before using the product, use a different pedal or contact us for a refund or a techical assistance.&quot;
-
+```
+```
 topic\_name[2] =&#39;noice\_issue&#39;
 
 topic\_answer[2] =&quot;If you experiencing noice issue while using our product that means there is an installation problem. Please refer to this manual https://www.howtononoice.com/angry/customer for a detailed instruction.&quot;
-
+```
+```
 topic\_name[3] =&quot;problem\_with\_strings&quot;
 
 topic\_answer[3] =&quot;This is a common problem. A system of strongly interacting strings can, in some cases, behave as a system of weakly interacting strings which results in a bad sound. Please contant one of our representatives - Ashoke Sen((801)122 2888) for details.&quot;
-
+```
+```
 topic\_name[4] =&quot;bad\_quality\_cable&quot;
 
 topic\_answer[4] =&quot;Sorry for hearing that. For now, we will do our best to sell as much product as possible but if quality becomes something that affects our sales we promise to focus on that.&quot;
-
+```
 Step 3 – ChatBot functions
 
 In this step we created two main functions – sentimentOfText and topicOfText which basically return the sentiment and the topic of a given text. sentimentOfText takes two arguments - dictionary and the text while topicOfText takes the lda model for the first argument and text for the second. After that the inner work of functions is the same as we did with our review data.
