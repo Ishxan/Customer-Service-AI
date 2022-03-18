@@ -85,24 +85,14 @@ Resources
 
 References
 
-Scherer, Klaus R. 1984. Emotion as a Multicomponent Process: A model and some crosscultural data. In P. Shaver, ed., Review of Personality and Social Psych 5: 37-63.
+1. Scherer, Klaus R. 1984. Emotion as a Multicomponent Process: A model and some crosscultural data. In P. Shaver, ed., Review of Personality and Social Psych 5: 37-63.
 
-Ekman, Paul. 1985. Telling Lies: Clues to Deceit in the Marketplace, Politics, and Marriage. New York:
+2. Ekman, Paul. 1985. Telling Lies: Clues to Deceit in the Marketplace, Politics, and Marriage. New York:Norton.
 
-Norton.
+3. Sanjiv Das and Mike Chen. 2001. Yahoo! for Amazon: extracting market sentiment from stock message boards. In Proceedings of the 8th Asia Pacific Finance Association Annual Conference.
 
-Sanjiv Das and Mike Chen. 2001. Yahoo! for Amazon: extracting market sentiment from stock message
+4. Pang, Bo; Lillian Lee; and Shivakumar Vaithyanathan. 2002. Thumbs up? sentiment classification using machine learning techniques. In Proceedings of the Conference on Empirical Methods in Natural Language Processing. ACL.
 
-boards. In Proceedings of the 8th Asia Pacific Finance Association Annual Conference.
+5. Plutchik, Robert. 2002. Emotions and Life. Washington, D.C.: American Psychological Association.
 
-Pang, Bo; Lillian Lee; and Shivakumar Vaithyanathan. 2002. Thumbs up? sentiment classification using
-
-machine learning techniques. In Proceedings of the Conference on Empirical Methods in Natural Language
-
-Processing. ACL.
-
-Plutchik, Robert. 2002. Emotions and Life. Washington, D.C.: American Psychological Association.
-
-V. Metsis, I. Androutsopoulos, G. Paliouras. 2006. Spam Filtering with Naive Bayes – Which Naive Bayes?
-
-CEAS 2006 -Third Conference on Email and AntiSpam.
+6. V. Metsis, I. Androutsopoulos, G. Paliouras. 2006. Spam Filtering with Naive Bayes – Which Naive Bayes? CEAS 2006 -Third Conference on Email and AntiSpam.
