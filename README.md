@@ -1,0 +1,2 @@
+# Customer-Service-AI
+A chatbot that will answer to client inquiries about the quality of a specific product(in our case the product is a guitar). It was build on R, and uses Sentiment Analysis and Latent Dirichlet Allocation algorisms to categorize data into severaltopics. This bot helps clients to get an immediate response to their questions and concerns which will of-course result in a better client experience. I also created a Shiny App to demonstrate the responses in action.
