@@ -35,19 +35,16 @@ topic_name[1] = 'pedal_issues'
 topic_answer[1] = "Please read carefully the manual before using the product, use a different pedal or contact us for a refund or a techical assistance."
 ```
 ```
-topic\_name[2] =&#39;noice\_issue&#39;
-
-topic\_answer[2] =&quot;If you experiencing noice issue while using our product that means there is an installation problem. Please refer to this manual https://www.howtononoice.com/angry/customer for a detailed instruction.&quot;
+topic_name[2] = 'noice_issue'
+topic_answer[2] = "If you experiencing noice issue while using our product that means there is an installation problem. Please refer to this manual https://www.howtononoice.com/angry/customer for a detailed instruction."
 ```
 ```
-topic\_name[3] =&quot;problem\_with\_strings&quot;
-
-topic\_answer[3] =&quot;This is a common problem. A system of strongly interacting strings can, in some cases, behave as a system of weakly interacting strings which results in a bad sound. Please contant one of our representatives - Ashoke Sen((801)122 2888) for details.&quot;
+topic_name[3] = "problem_with_strings"
+topic_answer[3] = "This is a common problem. A system of strongly interacting strings can, in some cases, behave as a system of weakly interacting strings which results in  a bad sound. Please contant one of our representatives - Ashoke Sen((801)122 2888) for details."
 ```
 ```
-topic\_name[4] =&quot;bad\_quality\_cable&quot;
-
-topic\_answer[4] =&quot;Sorry for hearing that. For now, we will do our best to sell as much product as possible but if quality becomes something that affects our sales we promise to focus on that.&quot;
+topic_name[4] = "bad_quality_cable"
+topic_answer[4] = "Sorry for hearing that. For now, we will do our best to sell as much product as possible but if quality becomes something that affects our sales we promise to focus on that."
 ```
 Step 3 – ChatBot functions
 
